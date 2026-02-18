@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HR-Automationss suite">
+<listeners>
+<listener class-name="Utilities.ListenersClass"></listener>
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+</listeners>
+
+  <test name="Testonchrome">
+  <parameter name="browser" value="chrome" />
+    <classes>
+       <class name="Testing.LoginTest"/>
+       <class name="Testing.CandidateAddDetailsTest"/> 
+    </classes>
+  </test> <!-- Test --> 
+</suite> <!-- Suite -->
+
